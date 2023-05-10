@@ -8,7 +8,10 @@ A repo and instruction list for new projects and general c# data and code lines
   - [Table of contents](#table-of-contents)
   - [General info](#general-info)
   - [Technologies](#technologies)
-  - [Run this project locally](#run-this-project-locally)
+  - [How to install](#how-to-install)
+  - [Start a new project](#start-a-new-project)
+  - [Snippets](#snippets)
+  - [Classes](#classes)
 
 ## General info
 
@@ -19,7 +22,21 @@ App developed with:
 C# || C Sharp
 .net
 
-## Run this project locally
+## How to install
 
-1. Fork this repository and clone the fork to your machine.
-2. Navigate to client and server files and run
+## Start a new project
+
+- `dotnet new console` Start a new project
+- `dotnet build` build file after editing 
+- `dotnet run` run the project
+
+## Snippets
+
+- `System.Diagnostics.Debug.WriteLine(b);` Test code
+- `Console.WriteLine(b);` Print Code
+- `Ex1 ex1Object = new Ex1();` Create new object
+
+## Classes
+
+- `public class Ex1 { }`
+  `public class Ex2 : Ex1 { }` extend a class
