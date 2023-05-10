@@ -149,6 +149,32 @@ Properties
         }
     }
 ```
+```cs
+    public class Example
+    {
+        private string Name;
+
+        public string Name
+        {
+            get
+            {
+                return Name;
+            }
+            set
+            {
+                name = value
+            }
+        }
+
+        public static void Main(string[] args)
+        {
+            Example test = new Example();
+            test.Name = "harry kin";
+            System.Diagnostics.Debug.WriteLine(Example.Name)
+        }
+    }
+
+
 ## ML.Net
 
 A free open source cross-platform
