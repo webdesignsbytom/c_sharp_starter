@@ -10,6 +10,7 @@
   - [AS operator](#as-operator)
   - [Operators](#operators)
   - [Data types](#data-types)
+  - [Functions](#functions)
   - [ML.Net](#mlnet)
 
 ## General
@@ -108,6 +109,72 @@ Numbers
 - Float `var = 1.1f`
 - Get remainders using modulus (10%3)
   
+## Functions
+
+Constructors 
+- if you dont create on c sharp will do it under the hood
+```cs
+    public class Example
+    {
+        int age;
+        // Contructor
+        public Example(int num) {
+            age = num;
+        }
+
+        public static void Main(string[] args)
+        {
+            Example test = new Example(5)
+            System.Diagnostics.Debug.WriteLine(test.age)
+        }
+    }
+```
+
+Finalizers 
+- A special type of function that is called when an object is created. 
+- No access modifiers
+- Only the garbage collectors can envoke when destroying the object.
+
+Properties
+- get and set variables
+
+```cs
+    public class Example
+    {
+        public string Name { get; set;}
+
+        public static void Main(string[] args)
+        {
+
+        }
+    }
+```
+```cs
+    public class Example
+    {
+        private string Name;
+
+        public string Name
+        {
+            get
+            {
+                return Name;
+            }
+            set
+            {
+                name = value
+            }
+        }
+
+        public static void Main(string[] args)
+        {
+            Example test = new Example();
+            test.Name = "harry kin";
+            System.Diagnostics.Debug.WriteLine(Example.Name)
+        }
+    }
+
+
 ## ML.Net
 
 A free open source cross-platform

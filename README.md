@@ -12,7 +12,6 @@ A repo and instruction list for new projects and general c# data and code lines
   - [Start a new project](#start-a-new-project)
   - [Snippets](#snippets)
   - [Classes](#classes)
-  - [SQL Server](#sql-server)
 
 ## General info
 
@@ -41,10 +40,3 @@ C# || C Sharp
 
 - `public class Ex1 { }`
   `public class Ex2 : Ex1 { }` extend a class
-
-
-## SQL Server
-- install microsoft entity framework code sql server
-- install microsoft entity framework tools - runs migrations
-- 
-
