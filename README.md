@@ -12,6 +12,11 @@ A repo and instruction list for new projects and general c# data and code lines
   - [Start a new project](#start-a-new-project)
   - [Snippets](#snippets)
   - [Classes](#classes)
+  - [.NET Framework](#net-framework)
+    - [ASP](#asp)
+    - [MVC MODELS VIEWS CONTROLLERS](#mvc-models-views-controllers)
+    - [Found errors](#found-errors)
+    - [Shortcuts](#shortcuts)
 
 ## General info
 
@@ -40,3 +45,54 @@ C# || C Sharp
 
 - `public class Ex1 { }`
   `public class Ex2 : Ex1 { }` extend a class
+
+## .NET Framework
+
+- A C# and F# solution to making multip platform projects
+- A virtual framwork like java
+- 
+  
+### ASP
+
+- ASP.NET is a server side and web applications
+- The best tool to use is C# but you can use many languages.
+- A solution to build web forms
+- Runs a dynamic website
+- `Razor` is the dymanic code that runs the front end and is cross between html an css
+- Pages folders are for Razor not MVC
+- `Entity` is the ORM object relation mapper for databases for basic apps.
+- `.cshtml` is the file extension.
+- Using bootstrap classes as style.
+- Can work with React, angular and vuew.
+- IIS is microsofts web server and used to run locally
+- Views folder containers html and frontend
+
+### MVC MODELS VIEWS CONTROLLERS
+
+A code process to create smaller modules that a reuseable.
+Sperations of concerns with smaller file sizes.
+
+- Models, manage data and behavior
+- Views, manage the display of data. Dynamic cshtml.
+- Controller, handles page events and navigation.
+  
+Structure Users => Router => Controller => Models => Database
+
+Create controller 
+1. Right click controllers dir
+2. Add controller 
+3. Select 3rd option
+4. Route it to ApplicationDbContext
+5. All tick boxes
+6. Press Add
+
+### Found errors
+
+- localhost blocked by google go to
+chrome://flags/   then set local hosts Allow invalid certificates for resources loaded from localhost.
+
+### Shortcuts 
+
+- quick property `prop + tab + tab`
+- quick contructor, `ctor + tab + tab`, public Name {} method
+- `ctrl D` duplicate

@@ -29,6 +29,7 @@ namespace Arrays
 // Lists are like arrays but are static with a fixed size
 // Lists are mutable and can change dynamically
 // Import using System.Collections.Generic;
+// Use more memory
 
 using System.Collections.Generic;
 
