@@ -41,7 +41,27 @@ namespace Lists
             // Delcalre a list
             // Type - type of obj - name = new List <datatype> - ();
             Lists<string> food = new List<string>();
-            
+
+// Add a item to the list
+            food.Add("pizaa");
+            food.Add("burgers");
+            // Remove an item
+            food.Remove("burgers");
+            // Get length
+            food.Count();
+            // Isert at index
+            // food.Insert(index, "item")
+            food.Insert(0, "fish");
+            // Last index of multiple same items
+            food.LastIndexOf("burgers");
+            // sort alphabeticall
+            food.Sort();
+            // sort backwards
+            food.Reverse();
+            // Clear list
+            food.Clear();
+            // Convert list to array
+            string[] foodarray = food.ToArray();
         }
     }
 }
