@@ -173,7 +173,12 @@ Properties
             System.Diagnostics.Debug.WriteLine(Example.Name)
         }
     }
-
+```
+Attributes
+- used to add metadata
+- methods and properties
+- reflection to view data
+- [attribute] 
 
 ## ML.Net
 
