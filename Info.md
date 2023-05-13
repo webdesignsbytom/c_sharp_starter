@@ -12,6 +12,7 @@
   - [Data types](#data-types)
   - [Functions](#functions)
   - [ML.Net](#mlnet)
+  - [Generics](#generics)
 
 ## General
 
@@ -186,3 +187,16 @@ A free open source cross-platform
 ML.Net is used in machine learning for C# F#
 Predict models, classify image, AI
 
+## Generics 
+
+- pass any data type using generics
+- <T> T makes it generic
+- reusable .net 
+- List<T> is placeholder for type
+
+```cs
+class Program<T>
+{
+    void PrintMessage(T message){}
+}
+```
