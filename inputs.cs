@@ -16,3 +16,25 @@ namespace ConsoleApp4
     }
 }
 
+// Key input
+private static void ReadKeys()
+        {
+            Console.WriteLine("..........");
+
+            ConsoleKeyInfo key = new ConsoleKeyInfo();
+
+                key = Console.ReadKey(true);
+
+                switch (key.Key)
+                {
+                    case ConsoleKey.Y:
+                        Console.WriteLine("Yes was selected");
+                        break;
+                    case ConsoleKey.N:
+                        Console.WriteLine("No was selected");
+                        break;
+
+                }
+
+            
+        }
