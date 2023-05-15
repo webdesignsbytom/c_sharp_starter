@@ -11,8 +11,11 @@
   - [Operators](#operators)
   - [Data types](#data-types)
   - [Functions](#functions)
+  - [Interfaces](#interfaces)
   - [ML.Net](#mlnet)
   - [Generics](#generics)
+  - [Interfaces](#interfaces-1)
+  - [2d](#2d)
 
 ## General
 
@@ -181,6 +184,41 @@ Attributes
 - reflection to view data
 - [attribute] 
 
+## Interfaces 
+
+// interfaces decouple classes and give us a range of reusable functionality, its a work around to multiple inheritance
+// Cannot contain fields or variables
+// You must impletment all the code
+// each class can have only one base class - but can implement its own interface.
+
+```cs
+namespace LessonOne
+{
+    interface IExample
+    {
+        void Example();
+
+        int Example2();
+
+        string Example3(string string1, string string2);
+    }
+}
+
+
+ internal class Program : IExample, SecondInterface
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+
+            Console.ReadLine();
+        }
+
+        public void Example()
+        {
+            Console.WriteLine("Hello");
+        }
+```
 ## ML.Net
 
 A free open source cross-platform
@@ -200,3 +238,12 @@ class Program<T>
     void PrintMessage(T message){}
 }
 ```
+
+## Interfaces
+
+
+
+## 2d
+
+- float[,] heightAll = terData.GetHeights(0, 0, allWidth, allHeight); [,] means its a 2D array or game grid
+- https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays?redirectedfrom=MSDN

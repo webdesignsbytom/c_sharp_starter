@@ -97,3 +97,4 @@ chrome://flags/   then set local hosts Allow invalid certificates for resources 
 - quick contructor, `ctor + tab + tab`, public Name {} method
 - `ctrl D` duplicate
 - `ctrl shift b` build file
+- `ctrl .` shortcut to create stuff
