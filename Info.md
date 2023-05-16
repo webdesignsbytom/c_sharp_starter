@@ -2,6 +2,7 @@
 
 - [Information notes about C sharp](#information-notes-about-c-sharp)
   - [General](#general)
+  - [Static](#static)
   - [Errors](#errors)
   - [Syntax Rules](#syntax-rules)
   - [Types of Access Modifiers](#types-of-access-modifiers)
@@ -22,6 +23,9 @@
 - One main method only
 -
 
+## Static
+
+A static field is a unchaging collection of data. i.e starting number of cars in a race
 ## Errors
 
 Types of errors include:
