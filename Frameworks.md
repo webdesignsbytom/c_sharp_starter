@@ -51,3 +51,25 @@ private void ButtonAddName_Click(object sender, RoutedEventArgs e)
 
 }
 ```
+## .Net web API
+
+- `dotnet new sln -o BuberBreakfast` create
+- `cd BuberBreakfast`
+- `dotnet new classlib -o BuberBreakfast.Contracts`
+- `dotnet new webapi -o BuberBreakfast` install api
+- `dotnet build` then get error message because the files are not installed
+- `dotnet sln add .\BuberBreakfast.Contracts\ .\BuberBreakfast\` to install
+
+1. Create controllers for database
+   ```cs
+   public record BreakfastResponse(
+    Guid Id,
+    string Name,
+    sting Description,
+    DateTime StartDateTime,
+    DateTime EndDateTime,
+    DateTime LastModifiedDateTime,
+    List<String> Savory,
+    List<String> Sweet
+    );
+```
