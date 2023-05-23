@@ -1,4 +1,14 @@
-# .Net Framework Tools
+# dotNet Framework Tools
+
+## Table of contents
+
+- [dotNet Framework Tools](#dotnet-framework-tools)
+  - [Table of contents](#table-of-contents)
+  - [Console app](#console-app)
+  - [WPF Application](#wpf-application)
+    - [Click event](#click-event)
+  - [.Net web API](#net-web-api)
+  - [Forms](#forms)
 
 ## Console app
 
@@ -40,7 +50,7 @@ WPF is part of .NET, so if you have previously built applications with .NET usin
 </Window>
 ```
 
-## Click event
+### Click event
 
 ```cs
 <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
@@ -55,6 +65,7 @@ private void ButtonAddName_Click(object sender, RoutedEventArgs e)
 
 }
 ```
+
 ## .Net web API
 
 - `dotnet new sln -o BuberBreakfast` create
@@ -65,7 +76,7 @@ private void ButtonAddName_Click(object sender, RoutedEventArgs e)
 - `dotnet sln add .\BuberBreakfast.Contracts\ .\BuberBreakfast\` to install
 
 1. Create controllers for database
-   
+
 ```cs
    public record BreakfastResponse(
     Guid Id,
@@ -93,4 +104,4 @@ Now that we've added a button control to create an action, let's add a label con
 
     In either the Design section or the (DataBindings) section of the Properties window, change the name of label1 to lblHelloWorld, and then press Enter.
 
-3. 
+3.

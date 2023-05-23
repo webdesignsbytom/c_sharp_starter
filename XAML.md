@@ -1,4 +1,15 @@
-# XAML 
+# XAML
+
+## Table of contents
+
+- [XAML](#xaml)
+  - [Table of contents](#table-of-contents)
+  - [Components](#components)
+    - [Text Block](#text-block)
+  - [Add images to Grid](#add-images-to-grid)
+  - [Labels](#labels)
+  - [Button](#button)
+  - [Style](#style)
 
 ## Components
 
@@ -25,7 +36,7 @@
 </Grid>
 ```
 
-When this application runs, a message box appears after a user chooses a radio button and then chooses the Display button. One message box will appear for Hello, and another will appear for Goodbye. To create this behavior, you'll add code to the Button_Click 
+When this application runs, a message box appears after a user chooses a radio button and then chooses the Display button. One message box will appear for Hello, and another will appear for Goodbye. To create this behavior, you'll add code to the Button_Click
 event in MainWindow.xaml.cs.
 On the design surface, double-click the Display button.
 
@@ -59,7 +70,7 @@ else if (GoodbyeButton.IsChecked == true)
 ## Labels
 
 ```cs
-<Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS" 
+<Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
         FontWeight="Bold" FontSize="18" Foreground="#0066cc">
     View Expense Report
 </Label>

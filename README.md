@@ -35,7 +35,7 @@ Using CLR common runtime language
 ## Start a new project
 
 - `dotnet new console` Start a new project
-- `dotnet build` build file after editing 
+- `dotnet build` build file after editing
 - `dotnet run` run the project
 
 ## Architechture
@@ -61,7 +61,7 @@ Using CLR common runtime language
 
 - A C# and F# solution to making multip platform projects
 - A virtual framwork like java
-- 
+-
 
 ## Packages and their uses
 
@@ -70,6 +70,7 @@ Using CLR common runtime language
 3. FORMS
 4. CONSOLE APP - no gui. Text based programmable app.
 5. WPF
+
 ### ASP
 
 - ASP.NET is a server side and web applications
@@ -95,12 +96,13 @@ Sperations of concerns with smaller file sizes.
 - Models, manage data and behavior
 - Views, manage the display of data. Dynamic cshtml.
 - Controller, handles page events and navigation.
-  
+
 Structure Users => Router => Controller => Models => Database
 
-Create controller 
+Create controller
+
 1. Right click controllers dir
-2. Add controller 
+2. Add controller
 3. Select 3rd option
 4. Route it to ApplicationDbContext
 5. All tick boxes
@@ -109,9 +111,9 @@ Create controller
 ### Found errors
 
 - localhost blocked by google go to
-chrome://flags/   then set local hosts Allow invalid certificates for resources loaded from localhost.
+  chrome://flags/ then set local hosts Allow invalid certificates for resources loaded from localhost.
 
-### Shortcuts 
+### Shortcuts
 
 - quick property `prop + tab + tab`
 - quick contructor, `ctor + tab + tab`, public Name {} method
