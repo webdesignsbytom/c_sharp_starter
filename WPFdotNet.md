@@ -173,6 +173,7 @@ VARIABLE STRINGS
 
 // BASIC METHOD DO NOT USE
 /// Use onpropertychange()
+
 ```cs
 // Control text in
         private string placeholder;
@@ -180,8 +181,8 @@ VARIABLE STRINGS
         public string Placeholder
         {
             get { return placeholder; }
-            set { 
-                placeholder = value; 
+            set {
+                placeholder = value;
                 tbPlaceholder.Text = placeholder;
             }
         }
