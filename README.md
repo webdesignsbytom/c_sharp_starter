@@ -70,6 +70,7 @@ Using CLR common runtime language
 3. FORMS
 4. CONSOLE APP - no gui. Text based programmable app.
 5. WPF
+6. MVVM Model view view model
 
 ### ASP
 

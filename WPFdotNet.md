@@ -12,10 +12,16 @@
   - [About WPF](#about-wpf)
   - [Set up](#set-up)
   - [Buttons](#buttons)
+  - [Bindings](#bindings)
   - [Grid](#grid)
+  - [StackPanel](#stackpanel)
+  - [GridSplitter](#gridsplitter)
   - [XAML](#xaml)
+  - [Adding Style](#adding-style)
+    - [Style Examples](#style-examples)
   - [Functions](#functions)
     - [Examples](#examples)
+    - [Opening a new window](#opening-a-new-window)
 
 ## About WPF
 
@@ -50,6 +56,9 @@ When/Why you may use it?
 7. Create a `View` folder to container UI components - navbar, main
 8. Add a `User Control WPF` c# item to create a components
 9. The local name space in the new file XAML will be the link to call components and must be declaired in the main file
+10. To use a `Windows Form` component right click and go to properties => enable windows forms
+11. Creating new windows require you to link them to the main cs file from their View folder `using WPFTutorial.View;`
+12. To quickly create a style sheet for a component press F4 to open 'properties'. Select the component on screen => miscilaniouse => style => convert to new resource => global style. 
 
 ## Buttons
 
@@ -57,6 +66,12 @@ When/Why you may use it?
 2. You can now effect its properties using c# in the code behind by typing the name
 3. set an onclick handler by using `Click="btn_Click"` in xaml
 4. if you use the shortcuts for Click it will auto create an event handler in the c# file.
+
+## Bindings
+
+```cs
+    Text="{Binding BoundText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}"/>
+```
 
 ## Grid
 
@@ -81,11 +96,52 @@ You then can tell components and elements which they belong to by using
 use `Width="*"` for responsive
 use `Width="20*"` for responsive percentage
 
+## StackPanel
+
+- Aranges children horizontally or vetically (auto vertical)
+- set to 'stretch' automatically
+- Is static unlike grid
+
+## GridSplitter
+
+- Controls the grid and allows the user to resize windows
+- reoccmened to use \* height rows
+
 ## XAML
 
 A cross between HTML and CSS
 Use Name property to connect to your c#
 
+## Adding Style
+
+1. Create a 'Styles' Folder
+2. Create a new Item 'Resource Dictionairy'
+3. Name it i.e 'ButtonStyles'
+4. Add this code to your App.xaml file
+5. To quickly create a style sheet for a component press F4 to open 'properties'. Select the component on screen => miscilaniouse => style => convert to new resource => global style. 
+
+```cs
+<Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/ButtonStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+```
+### Style Examples
+
+```cs
+<Style TargetType="Button" x:Key="ConfirmationButton">
+        <Setter Property="Width" Value="100" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Foreground" Value="Red" />
+        <Setter Property="Content" Value="OK" />
+    </Style>
+
+<Button Style="{StaticResource ConfirmationButton}"/>
+```
 ## Functions
 
 Using these in XAML will auto create a handler in cs
@@ -200,4 +256,20 @@ VARIABLE STRINGS
 // Set text
         <userControls:ClearableTextBox Grid.Row="1" Width="250" Height="40" Placeholder="First Name"/>
 
+```
+
+// USING INofityPropertyChanged
+
+### Opening a new window
+
+// The WPF window was added to a folder called View. The window is called NoramlWindow
+
+```cs
+using WPFTutorial.View;
+
+private void btnNormal_Click(object sender, RoutedEventArgs e)
+        {
+            NormalWindow normalWindow = new NormalWindow();
+            normalWindow.Show();
+        }
 ```
