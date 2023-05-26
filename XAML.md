@@ -143,6 +143,12 @@ This is to do with controlling the premade borders any app will have. To reduce 
   - Grid RowDefinition
   - Grid ColumnDefinition
 - StackPanel
+- ControlTemplate
+- Style 
+  - Style.Resources
+- Setter
+- DataTrigger
+  - Trigger 
 - Expander - down arrow to open menu props = Header, border(default white), expandDirection (arrow points)
 - ListView
 - ScrollViewer - how to add a scroll bar - props = VerticalScrollBarVisibility(auto = when needed), horizonotal default hidden, hidden = invisible.

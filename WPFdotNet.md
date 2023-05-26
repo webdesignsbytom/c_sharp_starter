@@ -11,6 +11,7 @@
   - [Table of contents](#table-of-contents)
   - [About WPF](#about-wpf)
   - [Set up](#set-up)
+  - [MVVM](#mvvm)
   - [Buttons](#buttons)
   - [Bindings](#bindings)
   - [Grid](#grid)
@@ -59,6 +60,16 @@ When/Why you may use it?
 10. To use a `Windows Form` component right click and go to properties => enable windows forms
 11. Creating new windows require you to link them to the main cs file from their View folder `using WPFTutorial.View;`
 12. To quickly create a style sheet for a component press F4 to open 'properties'. Select the component on screen => miscilaniouse => style => convert to new resource => global style. 
+
+## MVVM
+
+Model View View Model
+
+- Does use code behind but it is generally not needed an avoided.
+- No business logic - uncoupling view from model
+- Used for view specific logic
+
+
 
 ## Buttons
 
