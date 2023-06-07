@@ -1,3 +1,9 @@
+int num = Convert.ToInt32("45");
+int num2 = Convert.ToInt32(Console.ReadLine());
+// for decimaals use doube and toDouble            
+double num = Convert.ToDouble("45");
+double num2 = Convert.ToDouble(Console.ReadLine());
+
 using System;
 
 // Maths

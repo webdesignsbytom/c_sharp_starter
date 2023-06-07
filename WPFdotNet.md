@@ -78,7 +78,10 @@ Model View View Model
 3. set an onclick handler by using `Click="btn_Click"` in xaml
 4. if you use the shortcuts for Click it will auto create an event handler in the c# file.
 
-## Bindings
+## Data Bindings
+
+Connecting the UI and the underline data (codebehind) 
+
 
 ```cs
     Text="{Binding BoundText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}"/>

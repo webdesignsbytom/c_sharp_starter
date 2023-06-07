@@ -139,10 +139,16 @@ This is to do with controlling the premade borders any app will have. To reduce 
 ### Component list
 
 - The window! props = WindowStyle, none = blank slate.
+  
 - Grid
   - Grid RowDefinition
   - Grid ColumnDefinition
-- StackPanel
+- StackPanel - secondary elements in a single line
+- DockPanel - left right up or down
+- WrapPanel - right to left or top to bottom - auto reareange 
+- Canvas - coordiantes
+  
+- Border - add border effects and roudned
 - ControlTemplate
 - Style 
   - Style.Resources

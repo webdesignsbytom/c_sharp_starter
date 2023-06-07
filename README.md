@@ -122,3 +122,4 @@ Create controller
 - `ctrl D` duplicate
 - `ctrl shift b` build file
 - `ctrl .` shortcut to create stuff
+- `ctor + tab + tab` create public constructor 

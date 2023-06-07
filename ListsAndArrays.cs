@@ -1,7 +1,7 @@
 // Arrays
 // If you try to modify or add a unwanted item to the array you will get
 // `System.IndexOutOfRangeException`
-
+int[] luckyNumbers = { 4, 5, 6, 7, 8, 9, 10 };
 namespace Arrays
 {
     class Program
