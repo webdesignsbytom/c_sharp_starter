@@ -17,6 +17,7 @@
   - [Generics](#generics)
   - [Interfaces](#interfaces-1)
   - [2d](#2d)
+  - [LINQ](#linq)
 
 ## General
 
@@ -26,6 +27,7 @@
 ## Static
 
 A static field is a unchaging collection of data. i.e starting number of cars in a race
+
 ## Errors
 
 Types of errors include:
@@ -111,16 +113,18 @@ Built In Data Types in C sharp
 
 - Int (System.Int32), float (System.single), string (System.String), characters (System.Char), boolean (System.Boolean).
 
-Numbers 
+Numbers
 
 - Int - ++Value or Value++
 - Float `var = 1.1f`
 - Get remainders using modulus (10%3)
-  
+
 ## Functions
 
-Constructors 
+Constructors
+
 - if you dont create on c sharp will do it under the hood
+
 ```cs
     public class Example
     {
@@ -138,12 +142,14 @@ Constructors
     }
 ```
 
-Finalizers 
-- A special type of function that is called when an object is created. 
+Finalizers
+
+- A special type of function that is called when an object is created.
 - No access modifiers
 - Only the garbage collectors can envoke when destroying the object.
 
 Properties
+
 - get and set variables
 
 ```cs
@@ -157,6 +163,7 @@ Properties
         }
     }
 ```
+
 ```cs
     public class Example
     {
@@ -182,13 +189,15 @@ Properties
         }
     }
 ```
+
 Attributes
+
 - used to add metadata
 - methods and properties
 - reflection to view data
-- [attribute] 
+- [attribute]
 
-## Interfaces 
+## Interfaces
 
 // interfaces decouple classes and give us a range of reusable functionality, its a work around to multiple inheritance
 // Cannot contain fields or variables
@@ -223,17 +232,18 @@ namespace LessonOne
             Console.WriteLine("Hello");
         }
 ```
+
 ## ML.Net
 
 A free open source cross-platform
 ML.Net is used in machine learning for C# F#
 Predict models, classify image, AI
 
-## Generics 
+## Generics
 
 - pass any data type using generics
 - <T> T makes it generic
-- reusable .net 
+- reusable .net
 - List<T> is placeholder for type
 
 ```cs
@@ -245,9 +255,23 @@ class Program<T>
 
 ## Interfaces
 
-
-
 ## 2d
 
 - float[,] heightAll = terData.GetHeights(0, 0, allWidth, allHeight); [,] means its a 2D array or game grid
 - https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays?redirectedfrom=MSDN
+
+## LINQ
+
+````js
+List<Person> people = new List<Person>()
+            {
+                new Person() { Name = "John", Age = 30 },
+                new Person() { Name = "Sarch", Age = 25 },
+                new Person() { Name = "James", Age = 32 },
+                new Person() { Name = "Joseph", Age = 24 },
+            };
+
+            int oldestPersonAge = people.Select(x => x.Age).Max();
+            Console.WriteLine("Oldest: " + oldestPersonAge);
+            ```
+````
