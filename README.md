@@ -13,6 +13,8 @@ A repo and instruction list for new projects and general c# data and code lines
   - [Architechture](#architechture)
   - [Snippets](#snippets)
   - [Classes](#classes)
+  - [OOP](#oop)
+    - [OOP Four Pillars](#oop-four-pillars)
   - [.NET Framework](#net-framework)
   - [Packages and their uses](#packages-and-their-uses)
     - [ASP](#asp)
@@ -56,6 +58,21 @@ Using CLR common runtime language
 
 - `public class Ex1 { }`
   `public class Ex2 : Ex1 { }` extend a class
+
+## OOP
+
+- Create your own data structures
+- Includes data to describe the object
+- Includes funtions to control the instance
+- Create relationships between objects
+- Supports inheritance - inherit functions to save typing them out
+
+### OOP Four Pillars
+
+- Encapsulation - data is hidden from other classes and only accessable from the class
+- Abstraction - hide the details of how the code works from the user or other code
+- Inheritance - Add the functions to a child class
+- Polymorphism - can share data add functions but have different functionality 
 
 ## .NET Framework
 

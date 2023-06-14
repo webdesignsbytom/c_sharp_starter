@@ -17,12 +17,19 @@
   - [Generics](#generics)
   - [Interfaces](#interfaces-1)
   - [2d](#2d)
+  - [Threading](#threading)
+    - [Foreground Threads](#foreground-threads)
+    - [Background Threads](#background-threads)
+    - [Thread Priority](#thread-priority)
+    - [Thread Pooling](#thread-pooling)
+    - [Blocking](#blocking)
+    - [Parallel Programming](#parallel-programming)
   - [LINQ](#linq)
 
 ## General
 
 - One main method only
--
+
 
 ## Static
 
@@ -259,6 +266,60 @@ class Program<T>
 
 - float[,] heightAll = terData.GetHeights(0, 0, allWidth, allHeight); [,] means its a 2D array or game grid
 - https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays?redirectedfrom=MSDN
+
+## Threading 
+
+- What is Threading
+- using System.Threading;
+
+An independent path for code to be executed on
+Multithreading uses many threads simultaneously (parallel execution of code)
+The MAIN() method is the default thread
+Each thread has its own call stack
+When you call .start() the thread will be started running by the OS
+Share heap memory with threads
+You can only start a thread once (basically)
+you can only change the name at the start and once
+
+INDEPENDANT EXCUTION PATH OF CODE
+
+1. Create a static function that can be called from the main method 
+2. ```Thread t = new Thread(ExampleFunction)```
+
+### Foreground Threads
+
+By defualt all threads are foreground.
+If the foreground threads end while background threads are running they will be terminated
+
+### Background Threads
+
+Check by using .isBackground = true - properties
+
+### Thread Priority
+
+Its an ENUM type
+Several settingd that tell them when to run
+
+### Thread Pooling 
+
+- ```ThreadPool.QueueUserWorkItem(Example1);```
+
+Reusable threads that can be called when needed to save space
+use the ThreadPool class
+Once itsa used it is returned to the pool
+
+### Blocking
+
+Blocking is used to run one thread at a time or in a order
+Prevent threads for messing up shared data.
+If blocked it does not use cpu resources
+- use Thread.Sleep(1000) to pause a thread
+- use Thread.Join() to get order
+- use lock(name) to prevent changes until a process has finished
+
+### Parallel Programming
+
+An advanced threading process that uses multiple cores of a machine.
 
 ## LINQ
 
