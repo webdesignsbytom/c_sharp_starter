@@ -6,9 +6,11 @@
    <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" />
     </WindowChrome.WindowChrome>
+
 3. General properties
     WindowStyle="None"
     Background="#333333"
+
 4. Create a top bar grid
    <Grid>
         <Grid.RowDefinitions>
@@ -16,4 +18,5 @@
             <RowDefinition />
         </Grid.RowDefinitions>
     </Grid>
+
 5. 

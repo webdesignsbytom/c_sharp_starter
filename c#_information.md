@@ -1,7 +1,8 @@
 # Information notes about C sharp
 
 - [Information notes about C sharp](#information-notes-about-c-sharp)
-  - [General](#general)
+  - [OOP](#oop)
+    - [OOP Four Pillars](#oop-four-pillars)
   - [Static](#static)
   - [Errors](#errors)
   - [Syntax Rules](#syntax-rules)
@@ -26,10 +27,20 @@
     - [Parallel Programming](#parallel-programming)
   - [LINQ](#linq)
 
-## General
+## OOP
 
-- One main method only
+- Create your own data structures
+- Includes data to describe the object
+- Includes funtions to control the instance
+- Create relationships between objects
+- Supports inheritance - inherit functions to save typing them out
 
+### OOP Four Pillars
+
+- Encapsulation - data is hidden from other classes and only accessable from the class
+- Abstraction - hide the details of how the code works from the user or other code
+- Inheritance - Add the functions to a child class
+- Polymorphism - can share data add functions but have different functionality
 
 ## Static
 
@@ -267,7 +278,7 @@ class Program<T>
 - float[,] heightAll = terData.GetHeights(0, 0, allWidth, allHeight); [,] means its a 2D array or game grid
 - https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays?redirectedfrom=MSDN
 
-## Threading 
+## Threading
 
 - What is Threading
 - using System.Threading;
@@ -283,8 +294,8 @@ you can only change the name at the start and once
 
 INDEPENDANT EXCUTION PATH OF CODE
 
-1. Create a static function that can be called from the main method 
-2. ```Thread t = new Thread(ExampleFunction)```
+1. Create a static function that can be called from the main method
+2. `Thread t = new Thread(ExampleFunction)`
 
 ### Foreground Threads
 
@@ -300,9 +311,9 @@ Check by using .isBackground = true - properties
 Its an ENUM type
 Several settingd that tell them when to run
 
-### Thread Pooling 
+### Thread Pooling
 
-- ```ThreadPool.QueueUserWorkItem(Example1);```
+- `ThreadPool.QueueUserWorkItem(Example1);`
 
 Reusable threads that can be called when needed to save space
 use the ThreadPool class
@@ -313,6 +324,7 @@ Once itsa used it is returned to the pool
 Blocking is used to run one thread at a time or in a order
 Prevent threads for messing up shared data.
 If blocked it does not use cpu resources
+
 - use Thread.Sleep(1000) to pause a thread
 - use Thread.Join() to get order
 - use lock(name) to prevent changes until a process has finished

@@ -1,0 +1,39 @@
+<!-- // Window with resize and close -->
+
+<!-- Remove window style -->
+<Window x:Class="WPFTutorial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTutorial"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Background="#333333"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        Title="MainWindow" Height="300" Width="300">
+        <!-- Remove built in grid -->
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" />
+    </WindowChrome.WindowChrome>
+
+    <!-- Create a grid with top bar -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- Stack Panel to contain a row of buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnMinimize" Content="_" Width="40" Height="40" BorderBrush="Transparent" Foreground="White" Background="Transparent" Click="btnMinimize_Click"/> 
+            <!-- WindowState = WindowState.Minimized; -->
+            <Button x:Name="btnMaximize" Content="🗖" Width="40" Height="40" BorderBrush="Transparent" Foreground="White" Background="Transparent" Click="btnMaximize_Click"/>
+            <!-- if (WindowState == WindowState.Maximized)
+                WindowState = WindowState.Normal;
+            else WindowState = WindowState.Maximized; -->
+            <Button x:Name="btnClose" Content="X" Width="40" Height="40" BorderBrush="Transparent" Foreground="White" Background="Transparent" Click="btnClose_Click"/>
+            <!-- Close(); -->
+        </StackPanel>
+    </Grid>
+</Window>

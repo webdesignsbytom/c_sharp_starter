@@ -5,6 +5,7 @@
 - [ASP dotNet Framework](#asp-dotnet-framework)
   - [Table of contents](#table-of-contents)
   - [What is ASP.NET Framework](#what-is-aspnet-framework)
+  - [ASP](#asp)
   - [The langauge](#the-langauge)
   - [Start a project](#start-a-project)
   - [Database](#database)
@@ -18,6 +19,23 @@ This is a open source web framework for secure apps that run on all platforms;
 - uses html css js
 - web and mobile app
 - microsoft will verify your project
+
+## ASP
+
+- ASP.NET is a server side and web applications
+- The best tool to use is C# but you can use many languages.
+- A solution to build web forms
+- Runs a dynamic website
+- `Razor` is the dymanic code that runs the front end and is cross between html an css
+- Pages folders are for Razor not MVC
+- `Entity` is the ORM object relation mapper for databases for basic apps.
+- `.cshtml` is the file extension.
+- Using bootstrap classes as style.
+- Can work with React, angular and vuew.
+- IIS is microsofts web server and used to run locally
+- Views folder containers html and frontend
+- MAUI croos platform
+- WinForms - older form version and is being phased out. Legacy code.
 
 ## The langauge
 

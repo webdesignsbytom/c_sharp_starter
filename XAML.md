@@ -4,6 +4,10 @@
 
 - [XAML](#xaml)
   - [Table of contents](#table-of-contents)
+    - [Component list](#component-list)
+    - [Attributes](#attributes)
+    - [Function List](#function-list)
+    - [C# functions](#c-functions)
   - [Components](#components)
     - [Text Block](#text-block)
   - [Add images to Grid](#add-images-to-grid)
@@ -11,16 +15,57 @@
   - [Button](#button)
   - [Style](#style)
   - [WindowChrome](#windowchrome)
-    - [Component list](#component-list)
-    - [Attributes](#attributes)
-    - [Function List](#function-list)
-    - [C# functions](#c-functions)
+
+### Component list
+
+- The window! props = WindowStyle, none = blank slate.
+- Grid
+  - Grid RowDefinition
+  - Grid ColumnDefinition
+- StackPanel - secondary elements in a single line
+- DockPanel - left right up or down
+- WrapPanel - right to left or top to bottom - auto reareange
+- Canvas - coordiantes
+- Border - add border effects and roudned
+- ControlTemplate
+- Style
+  - Style.Resources
+- Setter
+- DataTrigger
+  - Trigger
+- Expander - down arrow to open menu props = Header, border(default white), expandDirection (arrow points)
+- ListView
+- ScrollViewer - how to add a scroll bar - props = VerticalScrollBarVisibility(auto = when needed), horizonotal default hidden, hidden = invisible.
+- Button
+- TextBox
+- TextBlock
+- Rectangle
+
+### Attributes
+
+- CornerRadius
+- Background
+- Foreground
+- Content = usually button display data
+- IsEnabled = set button to unclickable
+- TextChanged = detecting changes - creates a handler
+
+### Function List
+
+- Click - onclick function
+- MouseLeftButtonDown - used for dragging using c# `DragMove();`
+
+### C# functions
+
+- `ShowDialog()` - opens a modal
+- `DragMove();` - drag the window around - normally connected to a on mouse down event
 
 ## Components
 
-WINDOW 
+WINDOW
 
 - `WindowStartupLocation="CenterOwner"` start in middle of window that started it
+
 ### Text Block
 
 Window.Resources - Add style pages to xaml
@@ -135,49 +180,3 @@ This is to do with controlling the premade borders any app will have. To reduce 
         <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" />
     </WindowChrome.WindowChrome>
 ```
-
-### Component list
-
-- The window! props = WindowStyle, none = blank slate.
-  
-- Grid
-  - Grid RowDefinition
-  - Grid ColumnDefinition
-- StackPanel - secondary elements in a single line
-- DockPanel - left right up or down
-- WrapPanel - right to left or top to bottom - auto reareange 
-- Canvas - coordiantes
-  
-- Border - add border effects and roudned
-- ControlTemplate
-- Style 
-  - Style.Resources
-- Setter
-- DataTrigger
-  - Trigger 
-- Expander - down arrow to open menu props = Header, border(default white), expandDirection (arrow points)
-- ListView
-- ScrollViewer - how to add a scroll bar - props = VerticalScrollBarVisibility(auto = when needed), horizonotal default hidden, hidden = invisible.
-- Button
-- TextBox
-- TextBlock
-- Rectangle
-
-### Attributes
-
-- CornerRadius
-- Background
-- Foreground
-- Content = usually button display data
-- IsEnabled = set button to unclickable
-- TextChanged = detecting changes - creates a handler
-
-### Function List
-
-- Click - onclick function
-- MouseLeftButtonDown - used for dragging using c# `DragMove();`
-
-### C# functions
-
-- `ShowDialog()` - opens a modal
-- `DragMove();` - drag the window around - normally connected to a on mouse down event
