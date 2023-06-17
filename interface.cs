@@ -1,3 +1,8 @@
+// INTERFACES
+
+// A interface defines a contract that claases will inherit
+    // A interface declairs what a class should have 
+    // A inheriting class defines how it should work
 // Like a parent class or base class
 // precded nmae with I
 namespace InterfacesLessons
