@@ -1,6 +1,10 @@
 <!-- // Window with resize and close -->
 
 <!-- Remove window style -->
+<!-- Make transparrent -->
+<!-- Name window -->
+<!-- Set resize data -->
+<!-- Mouse button for dragging screen -->
 <Window x:Class="WPFTutorial.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,7 +13,11 @@
         xmlns:local="clr-namespace:WPFTutorial"
         mc:Ignorable="d"
         WindowStyle="None"
-        Background="#333333"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        x:Name="DashboardWindow"
+        Background="Transparent"
+        AllowsTransparency="True"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         Title="MainWindow" Height="300" Width="300">
         <!-- Remove built in grid -->
