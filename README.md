@@ -40,7 +40,7 @@ Pages found in this file
 ### Special
 
 - InterviewFile, This contains quick info and basic terms that will be needed in interview situations.
-
+- Fonts, a selection of useable fonts and an overview
 ### Overviews
 
 - ASPdotNet.md, information overview
@@ -53,3 +53,4 @@ Pages found in this file
 ### Code and snippets
 
 - shortcuts.md, short cuts and quick keys
+- Styles, How to use them inline or externally - includes ResourceDictionairy
