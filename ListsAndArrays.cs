@@ -1,4 +1,10 @@
 // Arrays
+
+string[] strings = new string[3] { "a", "b", "c" };
+// or
+string[] strings2 = { "a", "b", "c" };
+
+
 // If you try to modify or add a unwanted item to the array you will get
 // `System.IndexOutOfRangeException`
 int[] luckyNumbers = { 4, 5, 6, 7, 8, 9, 10 };
@@ -15,7 +21,7 @@ namespace Arrays
             food[1] "burger";
             food[2] "ice cream";
 
-            foreach( string item in food)
+            foreach (string item in food)
             {
                 Console.WriteLine(item);
             }
@@ -43,7 +49,7 @@ namespace Lists
             // Type - type of obj - name = new List <datatype> - ();
             Lists<string> food = new List<string>();
 
-// Add a item to the list
+            // Add a item to the list
             food.Add("pizaa");
             food.Add("burgers");
             // Remove an item

@@ -8,12 +8,17 @@ Including C# XAML
 
 - [c\_sharp\_starter](#c_sharp_starter)
   - [Table of contents](#table-of-contents)
+  - [Commands](#commands)
   - [Architechture of CSharp](#architechture-of-csharp)
   - [Packages and their uses](#packages-and-their-uses)
   - [Contents](#contents)
     - [Special](#special)
     - [Overviews](#overviews)
     - [Code and snippets](#code-and-snippets)
+
+## Commands
+
+`dotnet build -f net8.0-android` create apk file
 
 ## Architechture of CSharp
 
@@ -41,6 +46,7 @@ Pages found in this file
 
 - InterviewFile, This contains quick info and basic terms that will be needed in interview situations.
 - Fonts, a selection of useable fonts and an overview
+
 ### Overviews
 
 - ASPdotNet.md, information overview
